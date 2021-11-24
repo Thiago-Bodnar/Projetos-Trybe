@@ -1,0 +1,22 @@
+.second, .third {
+    display: inline-block;
+    
+}
+.section {
+    
+}
+
+.first {
+    margin-left: 380px;
+}
+.second {
+    margin-left: 180px;
+}
+.prizes {
+    text-align: center;
+   
+}
+li {
+    display: inline-block;
+    
+}
