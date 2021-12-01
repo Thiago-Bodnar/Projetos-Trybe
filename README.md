@@ -23,16 +23,16 @@ O programa tem mais de 1.500 horas de aulas presenciais e online, aborda introdu
 
 - [x] 3-1: _HTML e CSS - Estruturas de página_
 - [x] 3-2: _HTML e CSS - Primeiros passos com CSS_
-- [] 3-3: _HTML e CSS - Seletores e posicionamento_
-- [] 3-4: _HTML semântico_
-- [] 3-5: _ [Projeto - HTML e CSS] () _
+- [x] 3-3: _HTML e CSS - Seletores e posicionamento_
+- [x] 3-4: _HTML semântico_
+- [x] 3-5: _ [Projeto - HTML e CSS] (https://github.com/Thiago-Bodnar/Projetos-Trybe/tree/master/Fundamentos/Bloco-03-introdu%C3%A7%C3%A3o-a-HTML-e-CSS/Projeto%20Lessons%20Learned) _
 
 ##### Bloco 4: Introdução - JavaScript
 
-- [] 4-1: _JavaScript - Primeiros passos_
-- [] 4-2: _JavaScript - Array e Loop For_
-- [] 4-3: _JavaScript - Lógica de Programação e Algoritmos_
-- [] 4-4: _JavaScript - Objetos e funções_
+- [x] 4-1: _JavaScript - Primeiros passos_
+- [x] 4-2: _JavaScript - Array e Loop For_
+- [x] 4-3: _JavaScript - Lógica de Programação e Algoritmos_
+- [x] 4-4: _JavaScript - Objetos e funções_
 - [] 4-5: _ [Projeto - Funções Playground] () _
 
 ##### Bloco 5: Introdução - JavaScript - Projetos
