@@ -17,3 +17,35 @@ sectionDois.className = "left-content"
 sectionTres.className = 'right-content'
 main.appendChild(sectionDois);
 main.appendChild(sectionTres);
+let imagem = document.createElement("img");
+imagem.src = 'https://picsum.photos/200';
+imagem.className = 'small-image';
+document.querySelector(".left-content").appendChild(imagem);
+let numeros = [
+    'um',
+    'dois',
+    'tres',
+    'quatro',
+    'cinco',
+    'seis',
+    'sete',
+    'oito',
+    'nove',
+    'dez'
+];
+
+let ondeVaiLista = document.querySelector(".right-content");
+
+for (let i in numeros) {
+    let indiceDaLista = document.createElement('li');
+    let numeroAtual = numeros[i];
+    indiceDaLista.innerText = numeroAtual;
+
+    ondeVaiLista.appendChild(indiceDaLista);
+}
+for (let n = 0; n < 3; n += 1) {
+    let criaHDois = document.createElement('h2');
+    main.appendChild(criaHDois);
+
+}
+
