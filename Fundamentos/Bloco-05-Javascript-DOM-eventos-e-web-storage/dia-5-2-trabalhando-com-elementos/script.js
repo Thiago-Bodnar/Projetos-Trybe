@@ -48,4 +48,5 @@ for (let n = 0; n < 3; n += 1) {
     main.appendChild(criaHDois);
 
 }
-
+ titulo.className = 'title';
+ 
