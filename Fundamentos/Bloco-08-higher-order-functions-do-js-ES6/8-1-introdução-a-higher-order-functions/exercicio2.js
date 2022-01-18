@@ -7,12 +7,12 @@ const drawValidation = (bet) => {
   }
 };
 
-const prizeDraw = (bet, validation) => {
-  const result = validation(bet);
+const prizeDraw = (bet, callback) => {
+  const result = callback(bet);
   return result;
 };
 
-console.log(prizeDraw(3, drawValidation(3)));
+console.log(prizeDraw(3, drawValidation));
 
 
 
