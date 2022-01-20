@@ -73,9 +73,15 @@ const expectedResult = [
 //   'O Chamado de Cthulhu - Terror - H. P. Lovecraft',
 ];
 
-const formatedBookNames = (bookList) => bookList.map((book) => `${book.name} - ${book.genre} - ${book.author.name}`);
+// const formatedBookNames = (bookList) => bookList.map((book) => `${book.name} - ${book.genre} - ${book.author.name}`);
 
-console.log(formatedBookNames(books));
+// console.log(formatedBookNames(books));
 
 // Exercício 2:
 
+const nameAndAge = (bookList) => bookList.map((book) => ( 
+  { ['Age']: book.releaseYear - book.author.birthYear,
+  ['Author']: book.author.name }
+  ));
+
+console.log(nameAndAge(books));
