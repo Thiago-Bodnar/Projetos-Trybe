@@ -65,12 +65,12 @@ const books = [
 // Exercicio 1:
 
 const expectedResult = [
-//   'As Crônicas de Gelo e Fogo - Fantasia - George R. R. Martin',
-//   'O Senhor dos Anéis - Fantasia - J. R. R. Tolkien',
-//   'Fundação - Ficção Científica - Isaac Asimov',
-//   'Duna - Ficção Científica - Frank Herbert',
-//   'A Coisa - Terror - Stephen King',
-//   'O Chamado de Cthulhu - Terror - H. P. Lovecraft',
+  //   'As Crônicas de Gelo e Fogo - Fantasia - George R. R. Martin',
+  //   'O Senhor dos Anéis - Fantasia - J. R. R. Tolkien',
+  //   'Fundação - Ficção Científica - Isaac Asimov',
+  //   'Duna - Ficção Científica - Frank Herbert',
+  //   'A Coisa - Terror - Stephen King',
+  //   'O Chamado de Cthulhu - Terror - H. P. Lovecraft',
 ];
 
 // const formatedBookNames = (bookList) => bookList.map((book) => `${book.name} - ${book.genre} - ${book.author.name}`);
@@ -79,9 +79,40 @@ const expectedResult = [
 
 // Exercício 2:
 
-const nameAndAge = (bookList) => bookList.map((book) => ( 
-  { ['Age']: book.releaseYear - book.author.birthYear,
-  ['Author']: book.author.name }
-  ));
+// const nameAndAge = (bookList) => bookList.map((book , index) => (
+//   {
+//     ['Age']: book.releaseYear - book.author.birthYear,
 
-console.log(nameAndAge(books));
+//     ['Author']: book.author.name
+//   })
+// );
+
+
+// const nameAndAgeArray = nameAndAge(books);
+
+
+// console.log(nameAndAgeArray.sort((a, b) => a.Age < b.Age ? -1 : a.Age > b.Age ? 1 : 0));
+
+// Exercício 3:
+
+const fantasyOrFiccion = (bookList) => bookList.filter((book) => {
+  return book.genre === 'Fantasia' || book.genre === 'Ficção Científica';
+});
+
+// console.log(fantasyOrFiccion(books));
+
+// Exercício 4:
+
+const oldBooks = (bookList) => bookList.filter((book) => {
+  return 2022 - book.releaseYear > 60;
+}); 
+
+// const oldBooksOrdered = oldBooks(books).sort((a, b) => b.releaseYear < a.releaseYear ? 1 : b.releaseYear > a.releaseYear ? -1 : 0);
+
+// console.log(oldBooksOrdered);
+
+// Exercício 5:
+
+const fantasyOrFiccionNames = fantasyOrFiccion(books).filter((book) => `${book.name}`);
+
+console.log(fantasyOrFiccionNames);
