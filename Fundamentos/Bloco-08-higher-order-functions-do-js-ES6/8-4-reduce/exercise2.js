@@ -62,3 +62,9 @@ const books = [
 ];
 
 // Adicione o código do exercício aqui:
+
+const reduceNames = (array) => array.reduce((acc, current, index, array) => {
+(index === array.length -1) ? `${acc} ${current.author.name}.` : `${acc} ${current.author.name}.` 
+}, '');
+
+console.log(reduceNames(books));
